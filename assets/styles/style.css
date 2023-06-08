@@ -3,6 +3,12 @@ body {
   font-family: var(--fontRoboto);
   scroll-behavior: smooth;
 }
+/* html{
+  width: 100%;
+}
+header{
+  width: 100%;
+} */
 nav {
   padding: 31px;
   display: flex;
@@ -37,19 +43,18 @@ nav {
   font-weight: 800;
 }
 .bottom-header {
-  /* position: relative; */
   padding: 0px 31px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 37px;
 }
-/* .bottom-header img {
-} */
-/* .content{
-    position: absolute;
-    top: 112px;
-} */
+.content {
+  flex-grow: 1;
+}
+.image {
+  flex-grow: 1;
+}
 .texts h2 {
   font-weight: 700;
   font-size: 70px;
@@ -147,12 +152,13 @@ main {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 131px;
+  gap: 138px;
 }
 .section-2-content img {
   margin-bottom: 24px;
 }
 .section-2-content {
-  width: 45%;
+  flex-grow: 1;
 }
 
 .section-2-texts h4 {
@@ -177,8 +183,10 @@ main {
   display: flex;
   text-align: left;
   flex-direction: column;
-  min-width: max-content;
-  width: 484px;
+  /* min-width: max-content; */
+  min-width: 484px;
+  /* width: 484px; */
+  flex-grow: 1;
 }
 .boxText {
   font-weight: 700;
@@ -215,6 +223,7 @@ main {
   display: flex;
   justify-content: space-between;
   margin-bottom: 171px;
+  gap: 178px;
 }
 .section-3-box {
   padding: 36px 40px;
@@ -222,7 +231,8 @@ main {
   color: var(--Main-BlackColor);
   border: 4px solid var(--Main-BlackColor);
   border-radius: 16px;
-  width: 484px;
+  min-width: 484px;
+  flex-grow: 1;
 }
 .section-3-box-person {
   display: flex;
@@ -300,7 +310,7 @@ main {
   background-color: #454546;
 }
 .section-3-content {
-  width: 50%;
+  flex-grow: 1;
 }
 .section-3-content img {
   margin-bottom: 24px;
@@ -324,6 +334,13 @@ main {
   display: flex;
   justify-content: space-between;
   margin-bottom: 184px;
+  gap: 46px;
+}
+.section-4-content {
+  flex-grow: 1;
+}
+.section-4-boxes {
+  flex-grow: 1;
 }
 .section-4-content img {
   margin-bottom: 24px;
@@ -528,6 +545,7 @@ main {
 }
 .section-5-card {
   margin-bottom: 64px;
+  flex-grow: 1;
 }
 .section-5-btn button {
   background: var(--Main-BlackColor);
@@ -552,6 +570,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 40px;
 }
 .footor-above-texts p:first-child {
   font-weight: 800;
@@ -569,6 +588,9 @@ main {
 .footor-above-texts {
   margin-bottom: 40px;
 }
+.above-left {
+  flex-grow: 1;
+}
 .above-left button {
   background: var(--mainGreenColor);
   border-radius: 8px;
@@ -581,6 +603,9 @@ main {
 }
 .footer-above {
   margin-bottom: 130px;
+}
+.footer-above img {
+  flex-grow: 1;
 }
 .footer-bottom {
   display: flex;

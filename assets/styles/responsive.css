@@ -1,0 +1,46 @@
+@media screen and (max-width: 1200px) {
+  .bottom-header {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .section-1-cards {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .section-2 {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+  }
+  .section-3 {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+  }
+  .section-4 {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+  }
+  .section-5-boxs {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+  }
+  .section-5-card {
+    height: 220px;
+    width: 375px;
+    text-align: center;
+  }
+  .footer-above {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+  }
+}
