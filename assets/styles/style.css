@@ -19,6 +19,9 @@ nav {
   border-bottom: 1px solid var(--navigation-border-color);
   margin-bottom: 69px;
 }
+.nav-burger{
+  display: none;
+}
 .brand {
   display: flex;
   gap: 8px;
@@ -55,6 +58,10 @@ nav {
 .image {
   flex-grow: 1;
 }
+.image img{
+  width: 100%;
+}
+
 .texts h2 {
   font-weight: 700;
   font-size: 70px;
@@ -184,7 +191,7 @@ main {
   text-align: left;
   flex-direction: column;
   /* min-width: max-content; */
-  min-width: 484px;
+  width: 100%;
   /* width: 484px; */
   flex-grow: 1;
 }
@@ -231,7 +238,7 @@ main {
   color: var(--Main-BlackColor);
   border: 4px solid var(--Main-BlackColor);
   border-radius: 16px;
-  min-width: 484px;
+  width: 100%;
   flex-grow: 1;
 }
 .section-3-box-person {
@@ -244,6 +251,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  align-items: start;
 }
 .section-3-box-person-texts p:first-child {
   font-weight: 700;
@@ -299,7 +307,7 @@ main {
 .section-3-box button {
   background: var(--Main-BlackColor);
   border-radius: 16px;
-  padding: 12px 145px;
+  padding: 12px 110px;
   font-weight: 500;
   font-size: 24px;
   letter-spacing: -0.02em;
@@ -337,10 +345,10 @@ main {
   gap: 46px;
 }
 .section-4-content {
-  flex-grow: 1;
+width: 50%;
 }
 .section-4-boxes {
-  flex-grow: 1;
+width: 50%;
 }
 .section-4-content img {
   margin-bottom: 24px;
@@ -360,7 +368,7 @@ main {
   color: var(--Main-BlackColor);
 }
 .above {
-  width: 631px;
+  width: 100%;
   padding: 24px 62.5px 48px 59.5px;
   color: var(--Main-BlackColor);
   background-color: var(--MainWhiteColor);
@@ -387,7 +395,7 @@ main {
   background: var(--mainGreenColor);
   border-radius: 40px;
   padding: 4px 8px;
-  height: 32px;
+  
 }
 .above-p {
   font-weight: 500;
@@ -400,6 +408,7 @@ main {
 .bottom {
   display: flex;
   gap: 12px;
+  justify-content: space-between;
   margin-top: 13px;
 }
 .bottom-left {
@@ -408,7 +417,7 @@ main {
   border: 4px solid #303031;
   border-radius: 16px;
   color: var(--Main-BlackColor);
-  width: 381px;
+width: 60%;
 }
 .bottom-left img {
   border-radius: 50%;
@@ -430,7 +439,7 @@ main {
   margin-bottom: 24px;
 }
 .bottom-right {
-  width: 240px;
+  width: 40%;
   background: var(--MainWhiteColor);
   border: 4px solid var(--mainGreenColor);
   border-radius: 16px;
@@ -469,9 +478,12 @@ main {
   margin-bottom: 18px;
 }
 .bottom-right button {
-  padding: 12px 52.5px;
+  padding: 12px 40px;
   background-color: var(--Main-BlackColor);
   border-radius: 16px;
+
+  width: 100%;
+  
 }
 .bottom-right a {
   color: var(--MainWhiteColor);
@@ -566,11 +578,17 @@ main {
 .section-5 {
   margin-bottom: 44px;
 }
+.section-5-bottom-img img{
+  width: 100%;
+    }
 .footer-above {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 40px;
+}
+.footer-above img{
+  width: 100%;
 }
 .footor-above-texts p:first-child {
   font-weight: 800;
@@ -611,6 +629,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+ 
 }
 .footer-bottom p {
   font-weight: 700;
